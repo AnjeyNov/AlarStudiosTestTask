@@ -13,6 +13,12 @@
 		A08F588D26750DAD000F9147 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A08F588B26750DAD000F9147 /* Main.storyboard */; };
 		A08F588F26750DAF000F9147 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A08F588E26750DAF000F9147 /* Assets.xcassets */; };
 		A08F589226750DAF000F9147 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A08F589026750DAF000F9147 /* LaunchScreen.storyboard */; };
+		A08F589B26754110000F9147 /* CocoGothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A08F589A2675410F000F9147 /* CocoGothic.ttf */; };
+		A08F589D26754130000F9147 /* CocoGothic-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A08F589C26754130000F9147 /* CocoGothic-Bold.ttf */; };
+		A08F589F26754185000F9147 /* CocoGothic-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A08F589E26754185000F9147 /* CocoGothic-Light.ttf */; };
+		A08F58A226754D11000F9147 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08F58A026754D11000F9147 /* SignInViewController.swift */; };
+		A08F58A326754D11000F9147 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A08F58A126754D11000F9147 /* SignInViewController.xib */; };
+		A08F58AB26764C63000F9147 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08F58AA26764C63000F9147 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		A08F588E26750DAF000F9147 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A08F589126750DAF000F9147 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A08F589326750DAF000F9147 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A08F589A2675410F000F9147 /* CocoGothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CocoGothic.ttf; sourceTree = "<group>"; };
+		A08F589C26754130000F9147 /* CocoGothic-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CocoGothic-Bold.ttf"; sourceTree = "<group>"; };
+		A08F589E26754185000F9147 /* CocoGothic-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CocoGothic-Light.ttf"; sourceTree = "<group>"; };
+		A08F58A026754D11000F9147 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		A08F58A126754D11000F9147 /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		A08F58AA26764C63000F9147 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,9 @@
 		A08F588426750DAD000F9147 /* AlarStudiosTestTask */ = {
 			isa = PBXGroup;
 			children = (
+				A08F58AC26765147000F9147 /* Custom */,
+				A08F58A526754D35000F9147 /* SignIn */,
+				A08F589926754077000F9147 /* Fonts */,
 				A08F588526750DAD000F9147 /* AppDelegate.swift */,
 				A08F588726750DAD000F9147 /* SceneDelegate.swift */,
 				A08F588926750DAD000F9147 /* ViewController.swift */,
@@ -65,6 +80,33 @@
 				A08F589326750DAF000F9147 /* Info.plist */,
 			);
 			path = AlarStudiosTestTask;
+			sourceTree = "<group>";
+		};
+		A08F589926754077000F9147 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A08F589A2675410F000F9147 /* CocoGothic.ttf */,
+				A08F589E26754185000F9147 /* CocoGothic-Light.ttf */,
+				A08F589C26754130000F9147 /* CocoGothic-Bold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		A08F58A526754D35000F9147 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				A08F58A026754D11000F9147 /* SignInViewController.swift */,
+				A08F58A126754D11000F9147 /* SignInViewController.xib */,
+			);
+			name = SignIn;
+			sourceTree = "<group>";
+		};
+		A08F58AC26765147000F9147 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				A08F58AA26764C63000F9147 /* CustomTextField.swift */,
+			);
+			path = Custom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +166,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A08F589B26754110000F9147 /* CocoGothic.ttf in Resources */,
 				A08F589226750DAF000F9147 /* LaunchScreen.storyboard in Resources */,
 				A08F588F26750DAF000F9147 /* Assets.xcassets in Resources */,
+				A08F589F26754185000F9147 /* CocoGothic-Light.ttf in Resources */,
+				A08F58A326754D11000F9147 /* SignInViewController.xib in Resources */,
 				A08F588D26750DAD000F9147 /* Main.storyboard in Resources */,
+				A08F589D26754130000F9147 /* CocoGothic-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,9 +183,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A08F58A226754D11000F9147 /* SignInViewController.swift in Sources */,
 				A08F588A26750DAD000F9147 /* ViewController.swift in Sources */,
 				A08F588626750DAD000F9147 /* AppDelegate.swift in Sources */,
 				A08F588826750DAD000F9147 /* SceneDelegate.swift in Sources */,
+				A08F58AB26764C63000F9147 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
